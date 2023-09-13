@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teromaker recursos educativos</title>
+    <title>Página Educativa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a la Página Educativa</h1>
         <nav>
             <ul>
-                <li><a href="#electronica">Electrónica</a></li>
-                <li><a href="#robotica">Robótica</a></li>
-                <li><a href="#programacion">Programación</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <h1>Bienvenidos a la Página Educativa</h1>
     </header>
 
-    <section id="electronica">
-        <h2>Electrónica</h2>
-        <p>Contenido educativo sobre electrónica.</p>
-    </section>
+    <main>
+        <section id="inicio">
+            <h2>¿Qué ofrecemos?</h2>
+            <p>Ofrecemos una amplia variedad de cursos educativos en electrónica, robótica y programación para estudiantes de todos los niveles.</p>
+        </section>
 
-    <section id="robotica">
-        <h2>Robótica</h2>
-        <p>Contenido educativo sobre robótica.</p>
-    </section>
+        <section id="cursos">
+            <h2>Nuestros Cursos Destacados</h2>
+            <div class="curso">
+                <h3>Curso de Electrónica</h3>
+                <p>Aprende los fundamentos de la electrónica y cómo diseñar circuitos.</p>
+            </div>
+            <div class="curso">
+                <h3>Curso de Robótica</h3>
+                <p>Descubre el emocionante mundo de la robótica y construye tus propios robots.</p>
+            </div>
+            <div class="curso">
+                <h3>Curso de Programación</h3>
+                <p>Domina varios lenguajes de programación y desarrolla tus habilidades de codificación.</p>
+            </div>
+        </section>
 
-    <section id="programacion">
-        <h2>Programación</h2>
-        <p>Contenido educativo sobre programación.</p>
-    </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o comentarios? Contáctanos:</p>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Tu Página Educativa</p>
+        <p>&copy; 2023 Página Educativa</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
